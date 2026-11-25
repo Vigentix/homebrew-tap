@@ -12,7 +12,12 @@ brew trust vigentix/tap      # recent Homebrew versions ask you to trust third-p
 brew install --cask osin
 ```
 
-Osin 0.1 is not notarized yet. The first launch is blocked by macOS: allow it in **System Settings › Privacy & Security › Open Anyway**, or run
+Osin 0.1 is not notarized yet, so macOS blocks the first launch:
+
+1. Open Osin once and close the warning.
+2. Go to **System Settings › Privacy & Security**, scroll down, click **Open Anyway** next to Osin and confirm with your password.
+
+On macOS 15 and later, right-click › Open no longer bypasses this warning. To skip it entirely, remove the quarantine flag:
 
 ```sh
 xattr -dr com.apple.quarantine /Applications/Osin.app
