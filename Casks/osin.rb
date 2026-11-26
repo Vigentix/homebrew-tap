@@ -1,6 +1,6 @@
 cask "osin" do
-  version "0.1.2"
-  sha256 "fd21e8b662b55cce2dcd8aa60472a8bbabad1a85f193618b644af574a679214c"
+  version "0.2.0"
+  sha256 "eb171f803d7f776d53178e6d345dab954701e07d0b567118aaa684759495c3c2"
 
   url "https://github.com/Vigentix/osin/releases/download/v#{version}/Osin-#{version}.dmg"
   name "Osin"
